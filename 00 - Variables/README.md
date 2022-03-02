@@ -75,15 +75,8 @@ console.log(`${edad}`)   // edad is not defined (edad no esta definida)
 #### INVESTIGAR 
 * Las diferencias entre  `var`, `const` y en como es el uso correcto al declarar  `var`, `let` y `const` en JavaScript.
 * Reglas al declarar nombres de variables en JavaScript
+* Cuales son los tipos de datos que se le pueden asignar a las variables
 
-<h1 align="center"></h1>
-<h1 align="center">-->  TIPOS DE DATOS  <--- </h1>
-
-
-
-
-
-<br/>
 <br/>
 <br/>
 <p align="center">
