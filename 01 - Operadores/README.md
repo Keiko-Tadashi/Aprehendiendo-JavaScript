@@ -57,6 +57,62 @@ En el caso de asignaciones lógicas, (`x` &&= `y`), (`x` || = `y`) y (`x` ??= `y
 
 Teniendo en cuenta que los valores de retorno siempre se basan en los valores de los operandos antes de la operación.
 
+## Operadores de comparación
+
+Estos comparan sus operandos y devuelve un valor lógico en función de si la comparación es verdadera (true) o falsa (false). Las cadenas se comparan según el orden , utilizando valores Unicode. En la mayoría de los casos, si los dos operandos no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la comparación. Este comportamiento generalmente resulta en comparar los operandos numéricamente. Las únicas excepciones a la conversión de tipos dentro de las comparaciones involucran a los operadores === y !==, que realizan comparaciones estrictas de igualdad y desigualdad. Estos operadores no intentan convertir los operandos a tipos compatibles antes de verificar la igualdad. 
+
+La siguiente tabla teniendo en cuenta las variables var1 y var2, describiremos como funcionan los operadores de comparación en términos de este código de ejemplo:
+
+```javascript
+var var1 = 3
+var var2 = 4
+```
+| Operador                   | Descripción                                                                                                | Ejemplos que devuelven true          |
+|----------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------|
+| Igual (==)                 | Devuelve true si los operandos son iguales.                                                                | 3 == var1<br>"3" == var1<br>3 == '3' |
+| No es igual (!=)           | Devuelve true si los operandos no son iguales.                                                             | var1 != 4<br>var2 != "3"             |
+| Estrictamente igual (===)  | Devuelve true si los operandos son iguales y del mismo tipo. Consulta también Object.is y similitud en JS. | 3 === var1                           |
+| Desigualdad estricta (!==) | Devuelve true si los operandos son del mismo tipo pero no iguales, o son de diferente tipo.                | var1 !== "3"<br>3 !== '3'            |
+| Mayor que (>)              | Devuelve true si el operando izquierdo es mayor que el operando derecho.                                   | var2 > var1<br>"12" > 2              |
+| Mayor o igual que (>=)     | Devuelve true si el operando izquierdo es mayor o igual que el operando derecho.                           | var2 >= var1<br>var1 >= 3            |
+| Menor que (<)              | Devuelve true si el operando izquierdo es menor que el operando derecho.                                   | var1 < var2<br>"2" < 12              |
+| Menor o igual (<=)         | Devuelve true si el operando izquierdo es menor o igual que el operando derecho.                           | var1 <= var2<br>var2 <= 5            |
+
+## Operadores aritméticos
+
+Realizar operaciones matemáticas y cálculo es algo muy común que se hace con cualquier lenguaje de programación.
+
+JavaScript ofrece varios operadores para ayudarnos a trabajar con números. Además de las operaciones aritméticas estándar (+, -, *, /), JavaScript proporciona los operadores aritméticos enumerados en la siguiente tabla:
+
+| perador                         | Descripción                                                                                                                                                                                                                             | Ejemplo                                                                                                                |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| Residuo (%)                     | Operador binario. Devuelve el resto entero de dividir los dos operandos.                                                                                                                                                                | 12 % 5 devuelve 2.                                                                                                     |
+| Incremento (++)                 | Operador unario. Agrega uno a su operando. Si se usa como operador prefijo (++x), devuelve el valor de su operando después de agregar uno; si se usa como operador sufijo (x++), devuelve el valor de su operando antes de agregar uno. | Si x es 3, ++x establece x en 4 y devuelve 4, mientras que x++ devuelve 3 y , solo entonces, establece x en 4.         |
+| Decremento (--)                 | Operador unario. Resta uno de su operando. El valor de retorno es análogo al del operador de incremento.                                                                                                                                | Si x es 3, entonces --x establece x en 2 y devuelve 2, mientras que x-- devuelve 3 y, solo entonces, establece x en 2. |
+| Negación unaria (-)             | Operador unario. Devuelve la negación de su operando.                                                                                                                                                                                   | Si x es 3, entonces -x devuelve -3.                                                                                    |
+| Positivo unario (+)             | Operador unario. Intenta convertir el operando en un número, si aún no lo es.                                                                                                                                                           | +"3" devuelve 3.<br>+true devuelve 1.                                                                                  |
+| Operador de exponenciación (**) | Calcula la base a la potencia de exponente, es decir, baseexponente                                                                                                                                                                     | 2 ** 3 returns 8.<br>10 ** -1 returns 0.1.                                                                             |
+
+### Operadores lógicos
+
+Los operadores lógicos se utilizan con valores booleanos (lógicos); cuando lo son, devuelven un valor booleano `true` = `false`. Sin embargo, los operadores && y || en realidad devuelven el valor de uno de los operandos especificados, por lo que si estos operadores se utilizan con valores no booleanos, pueden devolver un valor no booleano. 
+
+En la siguiente tabla, veremos como funcionan:
+
+
+| Operador                         | Descripción                                                                                                                                                                                                                             | Ejemplo                                                                                                                |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| Residuo (%)                     | Operador binario. Devuelve el resto entero de dividir los dos operandos.                                                                                                                                                                | 12 % 5 devuelve 2.                                                                                                     |
+| Incremento (++)                 | Operador unario. Agrega uno a su operando. Si se usa como operador prefijo (++x), devuelve el valor de su operando después de agregar uno; si se usa como operador sufijo (x++), devuelve el valor de su operando antes de agregar uno. | Si x es 3, ++x establece x en 4 y devuelve 4, mientras que x++ devuelve 3 y , solo entonces, establece x en 4.         |
+| Decremento (--)                 | Operador unario. Resta uno de su operando. El valor de retorno es análogo al del operador de incremento.                                                                                                                                | Si x es 3, entonces --x establece x en 2 y devuelve 2, mientras que x-- devuelve 3 y, solo entonces, establece x en 2. |
+| Negación unaria (-)             | Operador unario. Devuelve la negación de su operando.                                                                                                                                                                                   | Si x es 3, entonces -x devuelve -3.                                                                                    |
+| Positivo unario (+)             | Operador unario. Intenta convertir el operando en un número, si aún no lo es.                                                                                                                                                           | +"3" devuelve 3.<br>+true devuelve 1.                                                                                  |
+| Operador de exponenciación (**) | Calcula la base a la potencia de exponente, es decir, baseexponente                                                                                                                                                                     | 2 ** 3 returns 8.<br>10 ** -1 returns 0.1.                                                                             |
+
+
+
+
+
 
 
 
