@@ -23,7 +23,6 @@ Basicamente este operador asigna un valor a su operando izquierdo basándose en 
 
 <h4 align="center"> OPERADORES DE ASIGNACIÓN COMPUESTO </h4>
 
-<h5 align="center"> 
 | **_Nombre_**                                        | **_Operador Abreviado_** | **_Significado_** |
 |-----------------------------------------------------|:------------------------:|-------------------|
 | Asignación                                          |           x = y          |       x = y       |
@@ -43,7 +42,6 @@ Basicamente este operador asigna un valor a su operando izquierdo basándose en 
 | Asignación OR lógico                                |         x \|\|= y        |   x \|\| (x = y)  |
 | Asignación de anulación lógica                      |          x ??= y         |    x ?? (x = y)   |
 
-</h5>
 
 
 
