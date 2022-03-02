@@ -21,7 +21,7 @@ Basicamente este operador asigna un valor a su operando izquierdo basándose en 
 
 * OPERADORES COMPUESTOS: Son el resultado de combinar expresiones matemáticas con un operador de asignación simple, para ello lo podemos ver en la sigiente tabla
 
-<h4 align="center"> OPERADORES DE ASIGNACIÓN COMPUESTO </h4>
+<h4 align="left"> OPERADORES DE ASIGNACIÓN COMPUESTO </h4>
 
 | **_Nombre_**                                        | **_Operador Abreviado_** | **_Significado_** |
 |-----------------------------------------------------|:------------------------:|-------------------|
