@@ -4,3 +4,4 @@ function años() {
 }
 años()   
 console.log(`${edad}`)   // edad is not defined (edad no esta definida)
+
