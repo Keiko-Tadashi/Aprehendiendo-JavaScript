@@ -7,7 +7,6 @@ Vamos a ver los operadores más comunes, aunque luego esta en ustedes el poder d
 * Operadores de comparación
 * Operadores aritméticos
 * Operadores lógicos
-* operadores de cadena
 * Operador condicional (ternario)
 * Operador coma
 * Operador unarios
@@ -108,8 +107,6 @@ En la siguiente tabla, veremos como funcionan:
 | Negación unaria (-)             | Operador unario. Devuelve la negación de su operando.                                                                                                                                                                                   | Si x es 3, entonces -x devuelve -3.                                                                                    |
 | Positivo unario (+)             | Operador unario. Intenta convertir el operando en un número, si aún no lo es.                                                                                                                                                           | +"3" devuelve 3.<br>+true devuelve 1.                                                                                  |
 | Operador de exponenciación (**) | Calcula la base a la potencia de exponente, es decir, baseexponente                                                                                                                                                                     | 2 ** 3 returns 8.<br>10 ** -1 returns 0.1.                                                                             |
-<h1 align="center"></h1>
-
 
 >El siguiente código muestra ejemplos del operador && (AND lógico).
 
@@ -140,6 +137,38 @@ var n1 = !true;  // !t devuelve false
 var n2 = !false; // !f devuelve true
 var n3 = !'Cat'; // !t devuelve false
 ```
+### Operador condicional ( tenario )
+
+Este es el único operador de JavaScript que toma tres operandos. El operador puede tener uno de dos valores según una condición. La sintaxis es:
+
+```javascript
+condicion ? valor1 : valor2
+```
+**Este se lee asi:** si condition es true, el operador tiene el valor de valor1. De lo contrario, tiene el valor de valor2. Puedes utilizar el operador condicional en cualquier lugar donde normalmente utilizas un operador estándar. Veamos un ejemplo para ver como funciona:
+
+```javascript
+var estado = 1
+
+var conexion = (estado === 1) ? 'Esta OnLine' : 'Esta OffLine'
+
+console.log(conexion)
+```
+Esta declaración asigna el valor "Esta OnLine" a la variable conexion si estado es 1. De lo contrario, asigna el valor "Esta OffLine" a conexion.
+
+### Operador de coma
+
+Este simplemente evalúa ambos operandos y devuelve el valor del último operando. Este operador se utiliza principalmente dentro de un bucle `for`, para permitir que se actualicen múltiples variables cada vez a través del bucle. Se considera de mal estilo usarlo en otros lugares, cuando no es necesario. A menudo, en su lugar pueden y se deben utilizar dos declaraciones independientes.
+
+```javascript
+var x = [0,1,2,3,4,5,6,7,8,9]
+var a = [x, x, x, x, x];
+
+for (var i = 0, j = 9; i <= j; i++, j--)
+console.log(`a [${i}][${j}] = ${i,j}`)
+```
+
+
+
 
 
 
