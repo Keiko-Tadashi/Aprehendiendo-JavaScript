@@ -5,8 +5,7 @@ var segundoNombre = 'Dario'
 var apellido = 'Calderon'
 
 console.log(primerNombre + ' ' + segundoNombre + ' ' + apellido)
-
-// Otra forma de mandar a llamar una variables es a traves de los simbolos ${}. Tareita de investigar como se usarla.
+// Otra forma de mandar a llamar una variables es a traves de los simbolos ${}.
 console.log(`${primerNombre} ${segundoNombre} ${apellido}`)
 
 var x = primerNombre + 2 + 4
