@@ -1,10 +1,13 @@
-// Concatenar variables
+// Concatenar variables : Concatenar es unir 2 o más variables
 
 var primerNombre = 'Daniel'
 var segundoNombre = 'Dario'
 var apellido = 'Calderon'
 
 console.log(primerNombre + ' ' + segundoNombre + ' ' + apellido)
+
+// Otra forma de mandar a llamar una variables es a traves de los simbolos ${}. Tareita de investigar como se usarla.
+console.log(`${primerNombre} ${segundoNombre} ${apellido}`)
 
 var x = primerNombre + 2 + 4
 console.log(x)
