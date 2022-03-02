@@ -3,11 +3,11 @@
 Las variables son la manera como los programadores le dan nombre a un valor para poder reusarlo, actualizarlo o simplemente registrarlo. Las variables se pueden usar para guardar cualquier tipo de dato en JavaScript.
 
 >*NOTA: Decimos que las variables contienen valores. Ésta es una importante distinción que debemos reconocer. Las variables no son los valores en sí mismos; son contenedores de valores.*
-## Declarar una Variable
+## Declarar una variable
 
 Para usar una variable, primero debes crearla — precisamente, a esto lo llamamos declarar la variable. Para hacerlo, escribimos la palabra clave `var`, `let` o `const` seguida del nombre con el que deseas llamar a tu variable.
 
-## Inicializar una Variable
+## Inicializar una variable
 
 Una vez que hayas declarado una variable, la puedes iniciar con un valor. Para ello, escribe el nombre de la variable, seguido de un signo igual (`=`), seguido del valor que deseas darle. 
 
@@ -23,13 +23,42 @@ console.log(edad)   //42
 console.log(estudiante)   //true
 ```
 
-Tengamos en cuanta que tanto `var`, `let` y `const` tienen diferentes ambitos de aplicación.
+>Tengamos en cuanta que tanto `var`, `let` y `const` tienen diferentes ambitos de aplicación.
 
-`var`: Es una variable que SI puede cambiar su valor y su scope es local.
+* `var` : Es una variable que SI puede cambiar su valor y su scope es local.
+* `let` : Es una variable que también podra cambiar su valor, pero solo vivira en el bloque donde fue declarada.
+* `const` : Es una constante la cual NO cambiara su valor en ningún momento en el futuro.
 
+## Que es Scope (ámbito) de una variable ?
 
+Scope se refiere a los lugares dentro de nuestro código en donde las variables están disponibles para su uso. Cuando una variable tiene un ámbito global, significa que está disponible en cualquier lugar de tu programa o sea que puede ser mandada a llamar desde cualquier parte del programa y las veces que sea necesaria. Veamos un ejemplo.
 
+```javascript
+var nombre = 'Daniel'
+function saludo() {
+  console.log('Hola, mi nombre es ' + nombre)
+}
+saludo(nombre)
+```
+Debido a que nuestra variable fue creada por fuera de la función, tiene alcance global. Esto significa que está disponible en cualquier parte del código, incluyendo dentro de cualquier función. Es por eso que la función, saludo, tiene acceso a la variable nombre.
 
+Ahora crearemos una variable que tenga alcance de función. Esto significa que la variable solo se puede acceder dentro de la función en la que fue creada. Este siguiente ejemplo será muy similar al código anterior, pero con un posicionamiento diferente de la variable.
+
+```javascript
+function años() {
+    var edad = 42
+    console.log('Tengo ' +edad+ ' años ')
+}
+años(edad)   // edad is not defined (edad no esta definida)
+console.log(años())
+```
+Esto es porque la variable edad tiene alcance de función. Es decir, solo esta disponible dentro de la función de la cuál fue creada. Al ejecutar `console.log()`, hemos intentado acceder a la variable desde afuera de la función, donde no tenemos acceso por lo que no nos mostrara nada en consola y nos devolvera un error.
+
+Las variables con alcance de función son útiles a los programadores porque frecuentemente queremos crear variables que sólo sirvan o sean necesarias dentro de cierta función. Crear variables globales también nos puede generar errores o fallos.
+
+Ahora que tenemos un entendimiento básico de lo que es el alcance, podemos entender la diferencia entre `var`, `let`.
+
+<h1 align="center">-->  TIPOS DE DATOS  <--- </h1>
 
 
 <br/>
