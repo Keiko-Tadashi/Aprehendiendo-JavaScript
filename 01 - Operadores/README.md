@@ -42,13 +42,23 @@ Basicamente este operador asigna un valor a su operando izquierdo basándose en 
 | Asignación OR lógico                                |         x \|\|= y        |   x \|\| (x = y)  |
 | Asignación de anulación lógica                      |          x ??= y         |    x ?? (x = y)   |
 
+### Valor de retorno
 
-
-
+La mayoria de las expresiones tienen un valor de retorno. Por ejemplo:  `x` = `y`, esto significa que en `x` = `y`
+el valor de retorno va a ser el de `y`, por que el valor de retorno coincide con la expresión a la derecha del signo.
 
 ```javascript
-
+var x = 10 
+var y = 5
+retorno = x = y
+console.log(retorno)   // 5
 ```
+En el caso de asignaciones lógicas, (`x` &&= `y`), (`x` || = `y`) y (`x` ??= `y`), el valor de retorno es el de la operación lógica sin la asignación, entonces `x` && `y`, `x` || `y` e  `x` ?? `y`, respectivamente.
+
+Teniendo en cuenta que los valores de retorno siempre se basan en los valores de los operandos antes de la operación.
+
+
+
 
 >Tengamos en cuanta que tanto `var`, `let` y `const` tienen diferentes ambitos de aplicación.
 
