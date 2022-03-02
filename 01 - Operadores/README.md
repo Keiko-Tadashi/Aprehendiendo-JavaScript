@@ -108,9 +108,38 @@ En la siguiente tabla, veremos como funcionan:
 | Negación unaria (-)             | Operador unario. Devuelve la negación de su operando.                                                                                                                                                                                   | Si x es 3, entonces -x devuelve -3.                                                                                    |
 | Positivo unario (+)             | Operador unario. Intenta convertir el operando en un número, si aún no lo es.                                                                                                                                                           | +"3" devuelve 3.<br>+true devuelve 1.                                                                                  |
 | Operador de exponenciación (**) | Calcula la base a la potencia de exponente, es decir, baseexponente                                                                                                                                                                     | 2 ** 3 returns 8.<br>10 ** -1 returns 0.1.                                                                             |
+<h1 align="center"></h1>
 
 
+>El siguiente código muestra ejemplos del operador && (AND lógico).
 
+```javascript
+var a1 =  true && true;     // t && t devuelve true
+var a2 =  true && false;    // t && f devuelve false
+var a3 = false && true;     // f && t devuelve false
+var a4 = false && (3 == 4); // f && f devuelve false
+var a5 = 'Cat' && 'Dog';    // t && t devuelve Dog
+var a6 = false && 'Cat';    // f && t devuelve false
+var a7 = 'Cat' && false;    // t && f devuelve false
+```
+>El siguiente código muestra ejemplos del operador || (OR lógico).
+
+```javascript
+var o1 =  true || true;     // t || t devuelve true
+var o2 = false || true;     // f || t devuelve true
+var o3 =  true || false;    // t || f devuelve true
+var o4 = false || (3 == 4); // f || f devuelve false
+var o5 = 'Cat' || 'Dog';    // t || t devuelve Cat
+var o6 = false || 'Cat';    // f || t devuelve Cat
+var o7 = 'Cat' || false;    // t || f devuelve Cat
+```
+>El siguiente código muestra ejemplos de el operador ! (NOT lógico).
+
+```javascript
+var n1 = !true;  // !t devuelve false
+var n2 = !false; // !f devuelve true
+var n3 = !'Cat'; // !t devuelve false
+```
 
 
 
