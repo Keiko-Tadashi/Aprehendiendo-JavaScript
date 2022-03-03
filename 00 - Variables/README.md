@@ -1,4 +1,12 @@
-<h1 align="center"></h1>
+```javascript
+const Kapelu = {
+    name : 'Daniel Calderon',
+    henry: 'FT-24b'
+     code: ['Javascript', 'HTML', 'CSS', 'NodeJS'],
+    tools: ['Visual Studio Code','GitBash', 'GitHub'],
+   github: 'https://github.com/Kapelu'
+}
+```
 <h1 align="center">-->  VARIABLES  <--- </h1>
 
 Las variables son la manera como los programadores le dan nombre a un valor para poder reusarlo, actualizarlo o simplemente registrarlo. Las variables se pueden usar para guardar cualquier tipo de dato en JavaScript.
@@ -80,5 +88,7 @@ console.log(`${edad}`)   // edad is not defined (edad no esta definida)
     
 <br/>
 <br/>
-<p align="center">
+<br/>
+<h1 align="center"></h1>
 <h3 align="left">Gracias!!!!  :rose:   XOXOXO
+<h1 align="center"></h1>

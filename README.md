@@ -5,12 +5,11 @@
  
 ```javascript
 const kapelusz = {
-  lenguaje: ['Javascript'],
-  herramientas: ['Visua Studio Code','NodeJS', 'Git'],
-  objetivos: function(){
-  return 'be a student at "Henry"'
-  }
-  return kapelusz
+    name : 'Daniel Calderon',
+    henry: 'FT-24b'
+     code: ['Javascript', 'HTML', 'CSS', 'NodeJS'],
+    tools: ['Visual Studio Code','GitBash', 'GitHub'],
+   github: 'https://github.com/Kapelu'
 }
 ```
 <br/>

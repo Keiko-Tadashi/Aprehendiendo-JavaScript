@@ -1,4 +1,12 @@
-<h1 align="center"></h1>
+```javascript
+const Kapelu = {
+    name : 'Daniel Calderon',
+    henry: 'FT-24b'
+     code: ['Javascript', 'HTML', 'CSS', 'NodeJS'],
+    tools: ['Visual Studio Code','GitBash', 'GitHub'],
+   github: 'https://github.com/Kapelu'
+}
+```
 <h1 align="center">-->  OPERADORES  <--- </h1>
 
 Vamos a ver los operadores más comunes, aunque luego esta en ustedes el poder de poder aprehender acerca de los demás operadores de JavaScript. En este capitulo vamos a ver
@@ -320,9 +328,9 @@ Veamos la Siguiente tabla
 | asignación               | = += -= *= /= %= <<= >>= >>>= &= ^= \|= &&= \|\|= ??= |
 | coma                     | ,                                                     |
 
-
 <br/>
 <br/>
 <br/>
-<p align="center">
+<h1 align="center"></h1>
 <h3 align="left">Gracias!!!!  :rose:   XOXOXO
+<h1 align="center"></h1>
