@@ -11,7 +11,7 @@ const Kapelu = {
 
 Vamos a ver los operadores más comunes, aunque luego esta en ustedes el poder de poder aprehender acerca de los demás operadores de JavaScript. En este capitulo vamos a ver
 
-* Operadores de asignación
+<a name="* Operadores de asignación"></a>
 * Operadores de comparación
 * Operadores aritméticos
 * Operadores lógicos
