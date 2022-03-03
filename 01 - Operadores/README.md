@@ -161,20 +161,166 @@ Este simplemente evalúa ambos operandos y devuelve el valor del último operand
 
 ```javascript
 var x = [0,1,2,3,4,5,6,7,8,9]
-var a = [x, x, x, x, x];
+var a = [x, x, x, x, x]
 
 for (var i = 0, j = 9; i <= j; i++, j--)
 console.log(`a [${i}][${j}] = ${i,j}`)
 ```
+si `a` es un arreglo bidimensional con 10 elementos en un lado, el siguiente código usa el operador coma para actualizar dos variables a la vez. El código imprime los valores de los elementos diagonales en el arreglo:
+
+### Operadores unarios
+
+Es una operación que solo necesita un valor para operar. Esto quiere decir que un operador unario más un valor nos va a devolver otro valor. Ellos son:
+
+* Operador delete
+* Operador void
+* Operador typeof
+* Operadores relacionales
+  
+> ***Operador delete:*** Elimina la propiedad de un objeto.
+
+* Es importante saber que el operador delete no libera memoria directamente (solo elimina la referencia), puede liberar memoria de manera indirecta siempre y cuando la referencia a la propiedad ha desaparecido.
+* Si el operador delete funciona correctamente, eliminará la propiedad del objeto completo, pero si existe otra propiedad con el mismo nombre dentro del prototype, este heredera la propiedad del prototype.
+* El operador delete no funciona en variables o nombres de funciones, por lo que solo es funcional en las propiedades de objetos.
+* El operador delete no puede eliminar algunas propiedades de los objetos predefinidos como Object, Array, Math, etc.
+Veamos algunos ejemplos:
+
+```javascript
+x = 42 // implícitamente crea window.x
+var y = 43
+var myobj = {h: 4} // crea un objeto con la propiedad h
+
+delete x        // devuelve true (se puede eliminar si se crea implícitamente)
+delete y        // devuelve false (no se puede borrar si se declara con var)
+delete Math.PI  // devuelve false (no se pueden eliminar propiedades no configurables)
+delete myobj.h  // devuelve true (puede eliminar propiedades definidas por el usuario)
+```
+Podemos eliminar un elemento dentro de un array, pero es muy importante tomar en cuenta que la longitud del array no se ve afectada (incluso si borrar el último elemento), por lo que la referencia en memoria va a permanecer como empty.
+
+```javascript
+let foo = ['apple', 'banana', 'pineapple', 'watermelon'];
+
+delete foo[2]; // Nos devuelve true
+
+console.log(foo); //Nos devuelve (4) ["apple", "banana", empty, "watermelon"]. 
+```
+En el ejemplo anterior vemos que borra el valor de la posicion 2 de foo, pero no borra la posición en si. Es por eso que es recomendable usar  `.pop` o `.shift` para borrar elementos de foo. delete prooca que se borre el valor de memoria, pero no su ubicación.
+
+> ***Operador void:*** Especifica una expresión que se evaluará sin devolver un valor.
+
+se utiliza de cualquiera de las siguientes formas:
+
+```javascript
+void (expression)
+void expression
+```
+expression es una expresión de JavaScript para evaluar. Los paréntesis que rodean la expresión son opcionales, pero es un buen estilo usarlos.
+
+> ***Operador typeof:*** Este devuelve una cadena (string) que nos indica el tipo de operando, pero sin evaluarlo.
+
+A continuacion veammos unos ejemplos para entenderlo:
+
+```javascript
+var myFun = new Function('5 + 2')
+var shape = 'round'
+var size = 1
+var foo = ['Apple', 'Mango', 'Orange']
+var today = new Date()
+
+typeof myFun       // devuelve "function"
+typeof shape       // devuelve "string"
+typeof size        // devuelve "number"
+typeof foo         // devuelve "object"
+typeof today       // devuelve "object"
+typeof doesntExist // devuelve "undefined"
+
+typeof true // devuelve "boolean"
+typeof null // devuelve "object"
+
+typeof 62            // devuelve "number"
+typeof 'Hola mundo'  // devuelve "string"
+```
+> ***Operadores relacionales:*** Un operador relacional compara sus operandos y devuelve un valor Boolean basado en si la comparación es verdadera.
+
+* **`in`:** Devuelve true si la propiedad especificada está en el objeto especificado. La sintaxis es:
+```javascript
+propNameOrNumber in objectName
+```
+donde propNameOrNumber es una expresión de cadena, numérica o de símbolo que representa un nombre de propiedad o índice de arreglo, y objectName es el nombre de un objeto.
+
+Veamos algunos ejemplos:
+```javascript
+// Arreglos
+var trees = ['redwood', 'bay', 'cedar', 'oak', 'maple'];
+0 in trees;        // devuelve true
+3 in trees;        // devuelve true
+6 in trees;        // devuelve false
+'bay' in trees;    // devuelve false (debes especificar el número del índice,
+                   // no el valor en ese índice)
+'length' en trees; // devuelve true (la longitud es una propiedad de Array)
+
+// objetos integrados
+'PI' in Math;          // devuelve true
+var myString = new String('coral');
+'length' in myString;  // devuelve true
+
+// Objetos personalizados
+var mycar = { make: 'Honda', model: 'Accord', year: 1998 };
+'make' in mycar;  // devuelve true
+'model' in mycar; // devuelve true
+```
 
 
 
+* **`instanceof`:** Devuelve true si el objeto especificado es del tipo de objeto especificado.
+La sintaxis es:
+```javascript
+objectName instanceof objectType
+```
+donde objectName es el nombre del objeto para comparar con objectType, y objectType es un tipo de objeto, como Date o Array.
+
+Utiliza instanceof cuando necesites confirmar el tipo de un objeto en tiempo de ejecución. Por ejemplo, al detectar excepciones, puedes ramificar a diferentes controladores según el tipo de excepción lanzada.
+
+Por ejemplo, el siguiente código usa instanceof para determinar si theDay es un objeto Date. Debido a que theDay es un objeto Date, las instrucciones de la expresión if se ejecutan.
+
+```javascript
+var theDay = new Date(1995, 12, 17)
+
+if (theDay instanceof Date) {
+  // instrucciones a ejecutar
+}
+```
+>PRECEDENCIA DE OPERADORES: 
+
+La precedencia de operadores determina el orden en el cual los operadores son 
+evaluados. Los operadores con mayor precedencia son evaluados primero. El operador de multiplicación ("*") 
+tiene una precedencia mas alta que el operador de suma ("+") y por eso sera evaluado primero.
+
+La precedencia de un operador indica qué tan estrechamente se unen dos expresiones juntas. Por ejemplo, en la expresión 1 + 5 * 3 , la respuesta es 16 y no 18 porque el operador de multiplicación ("*") tiene una
+precedencia mayor que el operador de adición ("+").
+
+Veamos la Siguiente tabla
+
+| Tipo de operador         | Operadores individuales                               |
+|--------------------------|-------------------------------------------------------|
+| miembro                  | . []                                                  |
+| llamar / crear instancia | () new                                                |
+| negación / incremento    | ! ~ - + ++ -- typeof void delete                      |
+| multiplicar / dividir    | * / %                                                 |
+| adición / sustracción    | + -                                                   |
+| desplazamiento bit a bit | << >> >>>                                             |
+| relacional               | < <= > >= in instanceof                               |
+| igualdad                 | == != === !==                                         |
+| AND bit a bit            | &                                                     |
+| XOR bit a bit            | ^                                                     |
+| OR bit a bit             | \|                                                    |
+| AND lógico               | &&                                                    |
+| OR lógico                | \|\|                                                  |
+| condicional              | ?:                                                    |
+| asignación               | = += -= *= /= %= <<= >>= >>>= &= ^= \|= &&= \|\|= ??= |
+| coma                     | ,                                                     |
 
 
-
-
-
->Tengamos en cuanta que tanto `var`, `let` y `const` tienen diferentes ambitos de aplicación.
 
 <br/>
 <br/>
