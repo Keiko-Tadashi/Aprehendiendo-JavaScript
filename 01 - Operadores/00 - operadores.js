@@ -47,19 +47,17 @@ let f = c + d;
 f = ++c;
 console.log (c);
 console.log (f);
-/* 
-Lo que no indica el pre-incremento es que primero se incrementa el valor y despues se hace la 
-asignacion
-*/
+
+// Lo que no indica el pre-incremento es que primero se incrementa el valor y despues se hace la asignacion
+
 
 // POST-INCREMENTO (el operador ++ después de la variable)
 f = d++;          
 console.log ( d );
 console.log ( f );
-/* 
-Lo que no indica el post-incremento es que primero se asigna el valor de la variable y posteriormente
-se incrementa
-*/
+ 
+//Lo que no indica el post-incremento es que primero se asigna el valor de la variable y posteriormente se incrementa
+
 
 // **  DECREMENTO 
 // PRE-DECREMENTO ( El operador -- antes de la variable)
@@ -75,10 +73,7 @@ f = d--;
 console.log(d);
 console.log(f);
 
-//*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-/*
-PRECEDENCIA DE OPERADORES
-*/
+// PRECEDENCIA DE OPERADORES
 
 function precedencia(a, b) {
     let a = 3;
