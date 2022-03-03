@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="https://github.com/Kapelucito/Kapelucito/blob/main/images/henry.png" min-width="350px" max-width="350px" width="350px"  alt="">
+<img src="https://github.com/Kapelu/Kapelu/blob/main/images/png/kape.png?w=1200"/>
   
 <h4 align="left">
  
