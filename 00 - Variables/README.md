@@ -77,8 +77,7 @@ console.log(`${edad}`)   // edad is not defined (edad no esta definida)
 * Reglas al declarar nombres de variables en JavaScript
 * Cuales son los tipos de datos que se le pueden asignar a las variables
 * Tareita de investigar como se usar `${}` al llamar una variable y en que caso se puede usar. 
-  
-  
+    
 <br/>
 <br/>
 <p align="center">
