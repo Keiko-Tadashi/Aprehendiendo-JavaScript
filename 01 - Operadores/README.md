@@ -49,7 +49,7 @@ Basicamente este operador asigna un valor a su operando izquierdo basándose en 
 | Asignación OR lógico                                |         x \|\|= y        |   x \|\| (x = y)  |
 | Asignación de anulación lógica                      |          x ??= y         |    x ?? (x = y)   |
 
-88888888888888888888888888888888888 Valor de retorno
+**Valor de retorno**
 
 La mayoria de las expresiones tienen un valor de retorno. Por ejemplo:  `x` = `y`, esto significa que en `x` = `y`
 el valor de retorno va a ser el de `y`, por que el valor de retorno coincide con la expresión a la derecha del signo.
