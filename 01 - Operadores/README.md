@@ -20,7 +20,7 @@ Vamos a ver los operadores más comunes, aunque luego esta en ustedes el poder d
 - [OPERADOR DE UNARIO](#operador-de-unario)
 - [OPERADORES RELACIONALES](#operadores-relacionales)
 
-<a name="#asignacion"></a>
+<a name="#asignacion"></a> 
 ### OPERADORES DE ASIGNACIÓN
 
 Basicamente este operador asigna un valor a su operando izquierdo basándose en el valor de su operando derecho. Hay dos tipos de operadores de asignación.
@@ -273,7 +273,7 @@ typeof 'Hola mundo'  // devuelve "string"
 
  Un operador relacional compara sus operandos y devuelve un valor Boolean basado en si la comparación es verdadera.
 
-* **`in`:** Devuelve true si la propiedad especificada está en el objeto especificado. La sintaxis es:
+> **`in`:** Devuelve true si la propiedad especificada está en el objeto especificado. La sintaxis es:
 ```javascript
 propNameOrNumber in objectName
 ```
@@ -301,9 +301,7 @@ var mycar = { make: 'Honda', model: 'Accord', year: 1998 };
 'model' in mycar; // devuelve true
 ```
 
-
-
-* **`instanceof`:** Devuelve true si el objeto especificado es del tipo de objeto especificado.
+> **`instanceof`:** Devuelve true si el objeto especificado es del tipo de objeto especificado.
 La sintaxis es:
 ```javascript
 objectName instanceof objectType
@@ -321,9 +319,9 @@ if (theDay instanceof Date) {
   // instrucciones a ejecutar
 }
 ```
+[OPERADORES](#top)
 
-
-888888888888888888888888888888888     PRECEDENCIA DE OPERADORES: 
+<h3 align="center">-->  PRECEDENCIA DE OPERADORES  <--- </h3>
 
 La precedencia de operadores determina el orden en el cual los operadores son 
 evaluados. Los operadores con mayor precedencia son evaluados primero. El operador de multiplicación ("*") 
