@@ -154,6 +154,7 @@ var n1 = !true;  // !t devuelve false
 var n2 = !false; // !f devuelve true
 var n3 = !'Cat'; // !t devuelve false
 ```
+[OPERADORES](#top)
 
 <a name="#condicional"></a>
 ### OPERADOR CONDICIONAL ( tenario )
