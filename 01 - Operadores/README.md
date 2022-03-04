@@ -7,22 +7,15 @@ const Kapelu = {
    github: 'https://github.com/Kapelu'
 }
 ```
+
+<a inicio="Inicio"></a>
 <h1 align="center">-->  OPERADORES  <--- </h1>
 
 Vamos a ver los operadores más comunes, aunque luego esta en ustedes el poder de poder aprehender acerca de los demás operadores de JavaScript. En este capitulo vamos a ver
 
 * [Operadores de asignación](#item1)
 
-<a href='## Operadores de asignación' name=""></a>
-<a name="* Operadores de comparación"></a>
-<a name="* Operadores aritméticos"></a>
-<a name="* Operadores de asignación"></a>
-<a name="* Operadores de asignación"></a>
-<a name="* Operadores de asignación"></a>
-<a name="* Operadores de asignación"></a>
-<a name="* Operadores de asignación"></a>
-<a name="* Operadores de asignación"></a>
-<a name="* Operadores de asignación"></a>
+
 * Operadores de comparación
 
 
@@ -79,6 +72,7 @@ En el caso de asignaciones lógicas, (`x` &&= `y`), (`x` || = `y`) y (`x` ??= `y
 
 Teniendo en cuenta que los valores de retorno siempre se basan en los valores de los operandos antes de la operación.
 
+[Inicio](#inicio)
 ## Operadores de comparación
 
 Estos comparan sus operandos y devuelve un valor lógico en función de si la comparación es verdadera (true) o falsa (false). Las cadenas se comparan según el orden , utilizando valores Unicode. En la mayoría de los casos, si los dos operandos no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la comparación. Este comportamiento generalmente resulta en comparar los operandos numéricamente. Las únicas excepciones a la conversión de tipos dentro de las comparaciones involucran a los operadores === y !==, que realizan comparaciones estrictas de igualdad y desigualdad. Estos operadores no intentan convertir los operandos a tipos compatibles antes de verificar la igualdad. 
