@@ -7,7 +7,7 @@ const Kapelu = {
    github: 'https://github.com/Kapelu'
 }
 ```
-<h1 align="center">-->  VARIABLES  <--- </h1>
+<h1 align="center">VARIABLES
 
 Las variables son la manera como los programadores le dan nombre a un valor para poder reusarlo, actualizarlo o simplemente registrarlo. Las variables se pueden usar para guardar cualquier tipo de dato en JavaScript.
 
@@ -68,7 +68,7 @@ Ahora que tenemos un entendimiento básico de lo que es el alcance, podemos ente
 
 `const` funciona similar a `var`, pero con unas cuantas diferencias grandes. Primero, `const` tiene alcance de bloque, mientras que `var` tiene alcance de función.
 
-#### ¿Qué es un bloque? 
+## ¿Qué es un bloque? 
 
 Un bloque se refiere a cualquier espacio que esté entre llaves de apertura y cierre
 

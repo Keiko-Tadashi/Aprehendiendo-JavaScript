@@ -8,7 +8,7 @@ const Kapelu = {
 }
 ```
 <a name="top"></a>
-<h1 align="center">-->  OPERADORES  <--- </h1>
+<h1 align="center">OPERADORES
 
 Vamos a ver los operadores más comunes, aunque luego esta en ustedes el poder de poder aprehender acerca de los demás operadores de JavaScript. En este capitulo vamos a ver
 - [OPERADORES DE ASIGNACIÓN](#operadores-de-asignación)
@@ -322,7 +322,7 @@ if (theDay instanceof Date) {
 ```
 [OPERADORES](#top)
 
-<h3 align="center">-->  PRECEDENCIA DE OPERADORES  <--- </h3>
+<h3 align="center">PRECEDENCIA DE OPERADORES
 
 La precedencia de operadores determina el orden en el cual los operadores son 
 evaluados. Los operadores con mayor precedencia son evaluados primero. El operador de multiplicación ("*") 
