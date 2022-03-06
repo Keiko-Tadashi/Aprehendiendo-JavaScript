@@ -7,8 +7,6 @@ const  Kapelu = {
     github:  'https://github.com/Kapelu'
 }
 ```
-<a  name="top"></a>
-
 <h1  align="center">ESTRUCTURAS DE CONTROL </h1>
 
 Las estructuras de control en javascript y en la mayoría de los lenguajes de programación se utilizan en los programas para definir el flujo de instrucciones que se van ejecutando. Si no fuera por las estructuras de control lo único que podríamos hacer es ejecutar una instrucción tras otra y no tendriamos forma de aplicar unas funciones u otras en según las condiciones que nosotros queramos establecer.
