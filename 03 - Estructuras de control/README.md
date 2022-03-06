@@ -9,7 +9,7 @@ const  Kapelu = {
 ```
 <a  name="top"></a>
 
-<h1  align="center">ESTRUCTURAS DE CONTROL
+<h1  align="center">ESTRUCTURAS DE CONTROL </h1>
 
 Las estructuras de control en javascript y en la mayoría de los lenguajes de programación se utilizan en los programas para definir el flujo de instrucciones que se van ejecutando. Si no fuera por las estructuras de control lo único que podríamos hacer es ejecutar una instrucción tras otra y no tendriamos forma de aplicar unas funciones u otras en según las condiciones que nosotros queramos establecer.
 
@@ -47,48 +47,48 @@ Otro ejemplo muy fácil de comprender relaccionado con la seguridad informática
 - [Declaración TRY CATCH](#trycatch)
 
 
-  <a  name="#ifelse"></a>
-#### Condicional IF...ELSE
+<a  name="#ifelse"></a> 
+### Condicional IF...ELSE
 
 
 [Subir](#top)
-  <a  name="#switch"></a>
-#### Condicional SWITCH
+<a  name="#switch"></a> 
+### Condicional SWITCH
 
 
 [Subir](#top)
-  <a  name="#while"></a>
-#### Condicional WHILE
+<a  name="#while"></a>
+### Condicional WHILE
 
 
 [Subir](#top)
-  <a  name="#doWhile"></a>
-#### Condicional DO WHILE
+<a  name="#doWhile"></a>
+### Condicional DO WHILE
 
 
 [Subir](#top)
-  <a  name="#for"></a>
+<a  name="#for"></a>
 #### Condicional FOR
 
 
 [Subir](#top)
-  <a  name="#forin"></a>
-#### Condicional FOR IN
+<a  name="#forin"></a>
+### Condicional FOR IN
 
 
 [Subir](#top)
-  <a  name="#forof"></a>
-#### Condicional FOR OF
+<a  name="#forof"></a>
+### Condicional FOR OF
 
 
 [Subir](#top)
-  <a  name="#trow"></a>
-#### Expresión TROW
+<a  name="#trow"></a>
+### Expresión TROW
 
 
 [Subir](#top)
-  <a  name="#trycatch"></a>
-#### Declaración TRY CATCH
+<a  name="#trycatch"></a>
+### Declaración TRY CATCH
 
 
 [Subir](#top)
