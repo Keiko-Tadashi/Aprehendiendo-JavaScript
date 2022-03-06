@@ -53,41 +53,49 @@ Otro ejemplo muy fácil de comprender relaccionado con la seguridad informática
 
 
 [Subir](#top)
+
 <a  name="#switch"></a> 
 ### Condicional SWITCH
 
 
 [Subir](#top)
+
 <a  name="#while"></a>
 ### Condicional WHILE
 
 
 [Subir](#top)
+
 <a  name="#doWhile"></a>
 ### Condicional DO WHILE
 
 
 [Subir](#top)
+
 <a  name="#for"></a>
 #### Condicional FOR
 
 
 [Subir](#top)
+
 <a  name="#forin"></a>
 ### Condicional FOR IN
 
 
 [Subir](#top)
+
 <a  name="#forof"></a>
 ### Condicional FOR OF
 
 
 [Subir](#top)
+
 <a  name="#trow"></a>
 ### Expresión TROW
 
 
 [Subir](#top)
+
 <a  name="#trycatch"></a>
 ### Declaración TRY CATCH
 
