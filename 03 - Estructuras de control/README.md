@@ -28,6 +28,7 @@ Otro ejemplo muy fácil de comprender relaccionado con la seguridad informática
 
 * **Estructuras de control de errores**. Estas estructuras son clave en el mundo de la seguridad informática. Son aquellas que permiten controlar los errores que el usuario final comete de forma fortuita o intencionada y poder seguir trabando de forma normal. Los errores más típicos a tener en cuenta se producen cuando pedimos al usuario que introduzca un número pero el usuario nos introduce una letra. Esto producirá un error en nuestro programá y hará que se comporte de forma inadecuada si no hemos controlado mediante una estructura de control de errores este caso.
 <a  name="top"></a>
+
 - [Condicional IF...ELSE](#ifelse)
 
 - [Condicional SWITCH](#switch)
