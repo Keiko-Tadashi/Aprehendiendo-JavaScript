@@ -7,9 +7,9 @@ const Kapelu = {
    github: 'https://github.com/Kapelu'
 }
 ```
-<h1 align="center">OPERADORES
+<h1 align="center">OPERADORES</h1>
 
-<h3 align="center">OPERADOR DE ASIGNACIÓN</h3>
+### *OPERADOR DE ASIGNACIÓN*
 
 Basicamente este operador asigna un valor a su operando izquierdo basándose en el valor de su operando derecho. Hay dos tipos de operadores de asignación.
 
@@ -52,7 +52,7 @@ En el caso de asignaciones lógicas, (`x` &&= `y`), (`x` || = `y`) y (`x` ??= `y
 
 Teniendo en cuenta que los valores de retorno siempre se basan en los valores de los operandos antes de la operación.
 
-<h3 align="center">OPERADORES DE COMPARACIÓN</h3>
+### *OPERADORES DE COMPARACIÓN*
 
 Estos comparan sus operandos y devuelve un valor lógico en función de si la comparación es verdadera (true) o falsa (false). Las cadenas se comparan según el orden , utilizando valores Unicode. En la mayoría de los casos, si los dos operandos no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la comparación. Este comportamiento generalmente resulta en comparar los operandos numéricamente. Las únicas excepciones a la conversión de tipos dentro de las comparaciones involucran a los operadores === y !==, que realizan comparaciones estrictas de igualdad y desigualdad. Estos operadores no intentan convertir los operandos a tipos compatibles antes de verificar la igualdad. 
 
@@ -73,7 +73,7 @@ var var2 = 4
 | Menor que (<)              | Devuelve true si el operando izquierdo es menor que el operando derecho.                                   | var1 < var2<br>"2" < 12              |
 | Menor o igual (<=)         | Devuelve true si el operando izquierdo es menor o igual que el operando derecho.                           | var1 <= var2<br>var2 <= 5            |
 
-<h3 align="center">OPERADORES ARITMÉTICOS</h3>
+### *OPERADORES ARITMÉTICOS*
 
 Realizar operaciones matemáticas y cálculo es algo muy común que se hace con cualquier lenguaje de programación.
 
@@ -88,7 +88,7 @@ JavaScript ofrece varios operadores para ayudarnos a trabajar con números. Adem
 | Positivo unario (+)             | Operador unario. Intenta convertir el operando en un número, si aún no lo es.                                                                                                                                                           | +"3" devuelve 3.<br>+true devuelve 1.                                                                                  |
 | Operador de exponenciación (**) | Calcula la base a la potencia de exponente, es decir, baseexponente                                                                                                                                                                     | 2 ** 3 returns 8.<br>10 ** -1 returns 0.1.                                                                             |
 
-<h3 align="center">OPERADORES LÓGICOS</h3>
+### *OPERADORES LÓGICOS*
 
 Los operadores lógicos se utilizan con valores booleanos (lógicos); cuando lo son, devuelven un valor booleano `true` = `false`. Sin embargo, los operadores && y || en realidad devuelven el valor de uno de los operandos especificados, por lo que si estos operadores se utilizan con valores no booleanos, pueden devolver un valor no booleano. 
 
@@ -134,7 +134,7 @@ var n2 = !false; // !f devuelve true
 var n3 = !'Cat'; // !t devuelve false
 ```
 
-<h3 align="center">OPERADOR CONDICIONAL ( tenario )</h3>
+### *OPERADOR CONDICIONAL ( tenario )*
 
 Este es el único operador de JavaScript que toma tres operandos. El operador puede tener uno de dos valores según una condición. La sintaxis es:
 
@@ -152,7 +152,7 @@ console.log(conexion)
 ```
 Esta declaración asigna el valor "Esta OnLine" a la variable conexion si estado es 1. De lo contrario, asigna el valor "Esta OffLine" a conexion.
 
-<h3 align="center">OPERADOR DE COMA </h3>
+### *OPERADOR DE COMA*
 
 Este simplemente evalúa ambos operandos y devuelve el valor del último operando. Este operador se utiliza principalmente dentro de un bucle `for`, para permitir que se actualicen múltiples variables cada vez a través del bucle. Se considera de mal estilo usarlo en otros lugares, cuando no es necesario. A menudo, en su lugar pueden y se deben utilizar dos declaraciones independientes.
 
@@ -238,7 +238,7 @@ typeof 62            // devuelve "number"
 typeof 'Hola mundo'  // devuelve "string"
 ```
 
-<h3 align="center">OPERADORES RELACIONALES </h3>
+### *OPERADORES RELACIONALES*
 
  Un operador relacional compara sus operandos y devuelve un valor Boolean basado en si la comparación es verdadera.
 
