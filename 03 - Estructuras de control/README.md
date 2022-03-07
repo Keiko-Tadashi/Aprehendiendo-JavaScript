@@ -111,11 +111,40 @@ console.log("¿Hay algo más que quieras?");
 
 ### *CONDICIONAL while*
 
+Esta estructura es la que se conoce como mientras (que es la traducción literal del inglés) en algoritmia. Y como dice su propio significado es un bucle que ejecuta las instrucciones mientras la condición o condiciones sigan siendo ciertas, mientras siga devolviendo “true” como valor. Su sintaxis es muy simple
+```javascript
+while(condición){
+    instrucciones
+}
+```
+Veamos un sencillo ejemplo donde ingresaremos un valor que se repetira hasta cumplir la condicion que deseamos.
+```javascript
+let suma = 0 
+while (suma < 1000){ 
+   	suma += parseInt(Math.random() * 100) 
+   	document.write (suma + "<br>") 
+}
+```
+Esto es tan sencillo como ir sumando uno cada vez a nuestra variable numero hasta que llegue a 10.
 
+*¿Qué pasa si antes de entrar al bucle no se cumple la condición?*
+Para ello veremos a continuacion un tipo especial de while llamado *do while*
 
+### *CONDICIONAL do while*
 
+ Dicha estructura se utiliza si queremos que el programa entre al bucle una vez al menos. La traducción literal es haz ... mientras de ahí que al menos una vez haga, entre al bucle.
 
+*¿Por qué siempre entra al menos una vez en nuestro bucle?*
 
+Porque como veremos a continuación la condición para ejecutar el bucle se realiza después de hacerlo. Puede sonar complicado pero veremos que es muy simple:
+
+La sintaxis es la siguiente:
+```javascript
+do { 
+   	//sentencias del bucle 
+} while (condición)
+
+```
 
 
 
