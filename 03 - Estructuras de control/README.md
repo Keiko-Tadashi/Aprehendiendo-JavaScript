@@ -117,13 +117,14 @@ while(condición){
     instrucciones
 }
 ```
-Veamos un sencillo ejemplo donde ingresaremos un valor que se repetira hasta cumplir la condicion que deseamos.
+Veamos un sencillo ejemplo donde ingresaremos un valor que se repetira hasta cumplir la condicion que deseamos, en este caso imprimira por consola los numero del 0 al 9.
 ```javascript
-let suma = 0 
-while (suma < 1000){ 
-   	suma += parseInt(Math.random() * 100) 
-   	document.write (suma + "<br>") 
+var i = 0;
+while (i<9) { 
+console.log(i); 
+i++;
 }
+console.log('»Salimos» del while porque i vale:' +i)
 ```
 Esto es tan sencillo como ir sumando uno cada vez a nuestra variable numero hasta que llegue a 10.
 
@@ -145,11 +146,41 @@ do {
 } while (condición)
 
 ```
+Veamos un ejemplo exactamente igual que el anterior pero con la diferencia de que la condición se comprueba al final. Este tipo de bucles son muy utilizados cuando creamos un menú de opciones; mientras el usuario no elija la opción de salir del programa seguiremos trabajando con el. Por ello necesitamos comprobar la opción que el usuario a elegido al final del programa, ya que al principio aún no sabemos la opción que ha escogido
+```javascript
+var resultado = 1
+var numero = 5
+do {
+  resultado = resultado * numero
+  numero–
+} while(numero > 0)
+ 
+console.log(resultado)
+```
+### *BUCLE for*
 
+Crea un bucle que consiste en tres expresiones opcionales, encerradas en paréntesis y separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle. Este bucle es muy utilizado para recorrer listas de objetos. Si nosotros tenemos una lista de 10 variables y queremos hacer algo sobre cada una de las variables podemos hacer un bucle for que hará las 10 iteraciones que necestiamos. Su sintaxis es la siguiente:
+```javascript
+for (inicio; condición; incremento) {
+  sentencia
+}
+```
+* **_INICIO:_** La declaración de variable, típicamente se utiliza para usarse como variable contador. Esta expresión puede opcionalmente declarar nuevas variables con la palabra clave var. Estas variables no son locales del bucle, es decir, están en el mismo alcance en el que está el bucle for. El resultado de esta expresión es descartado.
+* **_CONDICIÓN:_** Una expresión para ser evaluada antes de cada iteración del bucle. Si esta expresión se evalúa como verdadera, se ejecuta sentencia. Esta comprobación condicional es opcional. Si se omite, la condición siempre se evalúa como verdadera. Si la expresión se evalúa como falsa, la ejecución salta a la primera expresión que sigue al constructor de for.
+* **_INCREMENTO:_** Una expresión para ser evaluada al final de cada iteración del bucle. Esto ocurre antes de la siguiente evaluación de la condicion. Generalmente se usa para actualizar o incrementar la variable contador.
+* **_SENTENCIA:_** Una sentencia que se ejecuta mientras la condición se evalúa como verdadera. Para ejecutar múltiples sentencias dentro del bucle, utilice una sentencia block ({ ... }) para agrupar aquellas sentecias.
 
+Vamos a utilizar el ejemplo anterior para entenderlo mejor, donde mostraba los 10 primeros números con un blucle WHILE pero esta vez con un bucle FOR:
+```javascript
+for (let i=0; i<10; i++){
+  console.log(i)
+}
+```
+¿Por qué hemos reescrito el mismo ejemplo? Por una sencilla razón. No hay bucles mejores ni bucle peores, cada uno tiene sus características y se adaptan mejor o peor en cada caso en base a nuestras necesidades. Es muy fácil convertir un bucle en otro y que el programa siga manteniendo intacto su comportamiento. Un buen programador sabrá en cada caso qué bucle utilizar. Sabrá si necesita comprobar la condición al inicio o al final, si sabe el número de iteraciones que debe realizar es fijo o depende de una condición… etc.
 
+Ahora bien
 
-
+### *BUCLE for...in*
 
 
 
