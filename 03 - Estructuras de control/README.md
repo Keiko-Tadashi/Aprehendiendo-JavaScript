@@ -26,7 +26,7 @@ Otro ejemplo muy fácil de comprender relaccionado con la seguridad informática
 <h1  align="center"></h1>
 <h1  align="center">ESTRUCTURAS DE CONTROL CONDICIONALES</h1>
 
-### *CONDICIONAL if...else*
+>### *CONDICIONAL if...else*
 
 Las estructuras condicionales en javascript nos sirven para tomar decisiones en función de una condición que nosotros establecemos. Su sintáxis es así:
 ```javascript
@@ -58,7 +58,7 @@ if (jugador === 1) {
 }
 ```
 
-### *CONDICIONAL switch*
+>### *CONDICIONAL switch*
 
 Dicha estructura la utilizamos casi siempre que queremos realizar un menú con sus diferentes opciones. Es una especie de optimización de la repetición de los bucles else if que vimos antes y que funciona mucho mejor y sin ser redundante. Lo utilizamos para aquellas veces que queremos hacer comprobaciones múltiples de una misma variables, es decir, para elegir una característica sobre una variable que la excluye de poseer otra. Su sintaxis es la siguiente:
 ```javascript
@@ -109,7 +109,7 @@ console.log("¿Hay algo más que quieras?");
 <h1  align="center"></h1>
 <h1  align="center">ESTRUCTURAS DE CONTROL DE REPETICION</h1>
 
-### *CONDICIONAL while*
+>### *CONDICIONAL while*
 
 Esta estructura es la que se conoce como mientras (que es la traducción literal del inglés) en algoritmia. Y como dice su propio significado es un bucle que ejecuta las instrucciones mientras la condición o condiciones sigan siendo ciertas, mientras siga devolviendo “true” como valor. Su sintaxis es muy simple
 ```javascript
@@ -131,7 +131,7 @@ Esto es tan sencillo como ir sumando uno cada vez a nuestra variable numero hast
 *¿Qué pasa si antes de entrar al bucle no se cumple la condición?*
 Para ello veremos a continuacion un tipo especial de while llamado *do while*
 
-### *CONDICIONAL do while*
+>### *CONDICIONAL do while*
 
  Dicha estructura se utiliza si queremos que el programa entre al bucle una vez al menos. La traducción literal es haz ... mientras de ahí que al menos una vez haga, entre al bucle.
 
@@ -157,7 +157,7 @@ do {
  
 console.log(resultado)
 ```
-### *BUCLE for*
+>### *BUCLE for*
 
 Crea un bucle que consiste en tres expresiones opcionales, encerradas en paréntesis y separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle. Este bucle es muy utilizado para recorrer listas de objetos. Si nosotros tenemos una lista de 10 variables y queremos hacer algo sobre cada una de las variables podemos hacer un bucle for que hará las 10 iteraciones que necestiamos. Su sintaxis es la siguiente:
 ```javascript
@@ -178,19 +178,68 @@ for (let i=0; i<10; i++){
 ```
 ¿Por qué hemos reescrito el mismo ejemplo? Por una sencilla razón. No hay bucles mejores ni bucle peores, cada uno tiene sus características y se adaptan mejor o peor en cada caso en base a nuestras necesidades. Es muy fácil convertir un bucle en otro y que el programa siga manteniendo intacto su comportamiento. Un buen programador sabrá en cada caso qué bucle utilizar. Sabrá si necesita comprobar la condición al inicio o al final, si sabe el número de iteraciones que debe realizar es fijo o depende de una condición… etc.
 
-Ahora bien
+Ahora bien, no todo es facil, puede que existan algunas complicaciones como veremos. 
 
-### *BUCLE for...in*
+Cualquiera de estas tres expresiones o la sentencia del cuerpo del bucle pueden ser omitidas. Los bucles For son comúnmente utilizados para contar un cierto número de iteraciones para repetir una sentencia. Puedes utilizar una sentencia break para salir del bucle antes que la expresión de condición devuelva false.
+```javascript
+for (var elefante = 1; elefante < 10; elefante+=2) {
+    if (elefante === 7) {
+        break
+    }
+    console.info('elefante es ' + elefante)
+}
+// Resultado
+elefante es 1
+elefante es 3
+elefante es 5
+```
+Cuando recorremos un array utilizando los índices es fácil exceder los límites (ej. intentar referenciar el 4º elemento de un array de 3 elementos).
 
+```javascript
+// Los límites del array serán excedidos.
+var arr = [ 1, 2, 3 ];
+for (var i = 0; i <= arr.length; i++) {
+  console.log(arr[i])
+}
+// Resultado:
+1
+2
+3
+undefined
+```
+Hay dos maneras de arreglar este código. Que la condición sea `i < arr.length` ó `i <= arr.length - 1`.
 
+>### *BUCLE for...in*
+La declaración for...in itera sobre las propiedades enumerables de un objeto, en orden arbitrario. Para cada propiedad distinta, se pueden ejecutar sentencias.
+Su sintaxis es:
+```javascript
+for (variable in objeto) {
+  sentencia
+}
+```
+* **_VARIABLE:_** Un nombre distinto es asignado a la variable en cada iteración.
+* **_OBJETO:_** Objeto cuyas propiedades enumerables (no de tipo symbol) son iteradas.
+Veamos un ejemplo:
+```javascript
+// Inicializar el array (arreglo).
+let array = ['uno','dos', 'tres', 'cuatro']
+// Iterar sobre las propiedades y elementos.
+var s = ''
+for (let key in array) {
+    s += key + ':' + array[key] + '    '
+}
+console.log(s) // 0:uno 1:dos 2:tres 3:cuatro
+```
+Forma eficiente de obtener los índices (keys) de un objeto usando la expresión dentro de las condiciones del bucle for-in
 
+```javascript
+let objeto = {a: 1, b: 2, c:3}
+let indice = []
+let i=0
+for (indice[i++] in objeto){}
+console.log(indice)    // ['a', 'b', 'c']
 
-
-
-
-
-
-
+```
 
 
 <br/>
