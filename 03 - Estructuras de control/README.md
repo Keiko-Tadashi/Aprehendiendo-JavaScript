@@ -238,8 +238,6 @@ let indice = []
 let i=0
 for (indice[i++] in objeto){}
 console.log(indice)    // ['a', 'b', 'c']
-
-
 ```
 
 
