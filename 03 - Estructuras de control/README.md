@@ -251,24 +251,48 @@ for (variable of objeto) {
 ```
 * **_VARIABLE:_** En cada iteración se asigna un valor de una propiedad distinta a la variable.
 * **_OBJETO:_** Objeto cuyas propiedades son iteradas.
+
 Veamos algunos ejemplos:
-> *CON ARRAY*
+
+>> *CON ARRAY*
 ```javascript
-let arr = [ "fred", "tom", "bob" ]
+let arr = ['Martina', 'Lucia', 'Thomas']
 for (let i of arr) {
-  console.log(i)  // 
+  console.log(i)   // Martina, Lucia, Thomas 
 }
+```
+>> *CON MAP*
+```javascript
+var m = new Map()
+m.set(1, 'negro')
+m.set(2, 'rojo')
+for (var n of m) {
+  console.log(n)   // [1, 'negro'], [2, 'rojo']
+}
+```
+>> *CON SET*
+```javascript
+var s = new Set()
+s.add(1)
+s.add("rojo")
+for (var n of s) {
+  console.log(n)   // 1, rojo
+}
+```
+
+>> *CON ARGUMENTS OBJECT*
+```javascript
+function mostrarObjetoArguments() {
+  for (let n of arguments) {
+    console.log(n)   // 1, rojo
+  }
+}
+mostrarObjetoArguments(1, 'rojo')
 
 ```
-```javascript
-for (variable of objeto) {
-  sentencia
-}
-``````javascript
-for (variable of objeto) {
-  sentencia
-}
-```
+
+
+
 
 
 
