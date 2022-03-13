@@ -35,4 +35,4 @@ switch (fruta) {
   default:
     console.log(`Lo sentimos, no tenemos ${fruta}.`)
 }
-console.log('¿Hay algo más que quieras?');
+console.log('¿Hay algo más que quieras?')

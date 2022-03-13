@@ -120,10 +120,10 @@ while(condicion){
 ```
 Veamos un sencillo ejemplo donde ingresaremos un valor que se repetira hasta cumplir la condicion que deseamos, en este caso imprimira por consola los numero del 0 al 9.
 ```javascript
-var i = 0;
+var i = 0
 while (i<9) { 
-console.log(i); 
-i++;
+console.log(i)
+i++
 }
 console.log('»Salimos» del while porque i vale:' +i)
 ```
