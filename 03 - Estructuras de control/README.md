@@ -66,19 +66,19 @@ Dicha estructura la utilizamos casi siempre que queremos realizar un menú con s
 switch(opcion)
 {
 	case opcion1:
-		instrucciones
+		statement1
 		break
 	case opcion2:
-		instrucciones
+		statement2
 		break
 	case opcion3:
-		instrucciones
+		statement3
 		break
 	case opcion4:
-		instrucciones
+		statement4
 		break
 	default:
-		instrucciones
+		statement default
 		break
 }
 ```
@@ -88,22 +88,22 @@ Al bucle anterior se le pasa una variable, en este caso letra. Comprueba dicha v
 De esta manera no cortaríamos el flujo del programa y comprobaría el resto de opciones (que sabemos que no serán ciertas) por lo que será menos óptimo. Es muy importante tener en cuenta que las comprobaciones se hacen en orden, por lo tanto si sabemos qué opción o opciones se van a usar más es mejor que las coloquemos en primer lugar.
 El valor default que vemos en el código es el que se utiliza si el valor introducido no coincide con ningún case. En ese caso salta al default automáticamente. Sin embargo tampoco es obligatorio incluir default en nuestro código. Veamos un ejemplo, en el que consultamos el precio de las siguientes frutas.
 ```javascript
-let fruta = prompt('Que fruta desea consultar?')
+let fruta = 'manzana'
 switch (fruta) {
   case 'naranjas':
-    console.log('Las naranjas cuestan $ 30,00 el Kg.');
-    break;
+    console.log('Las naranjas cuestan $ 30,00 el Kg.')
+    break
   case 'manzanas':
-    console.log('Las manzanas cuestan $ 28,00 el Kg');
-    break;
+    console.log('Las manzanas cuestan $ 28,00 el Kg')
+    break
   case 'bananas':
-    console.log('Los plátanos cuestan $ 80,00 el Kg.');
-    break;
+    console.log('Los plátanos cuestan $ 80,00 el Kg.')
+    break
   case 'cerezas':
-    console.log('Las cerezas cuestan $ 95,00 el Kg.');
-    break;
+    console.log('Las cerezas cuestan $ 95,00 el Kg.')
+    break
   default:
-   console.log(`Lo sentimos, no tenemos ${fruta}.`);
+   console.log(`Lo sentimos, no tenemos ${fruta}.`)
 }
 console.log("¿Hay algo más que quieras?");
 ```
@@ -114,8 +114,8 @@ console.log("¿Hay algo más que quieras?");
 
 Esta estructura es la que se conoce como mientras (que es la traducción literal del inglés) en algoritmia. Y como dice su propio significado es un bucle que ejecuta las instrucciones mientras la condición o condiciones sigan siendo ciertas, mientras siga devolviendo “true” como valor. Su sintaxis es muy simple
 ```javascript
-while(condición){
-    instrucciones
+while(condicion){
+    statement
 }
 ```
 Veamos un sencillo ejemplo donde ingresaremos un valor que se repetira hasta cumplir la condicion que deseamos, en este caso imprimira por consola los numero del 0 al 9.
@@ -163,7 +163,7 @@ console.log(resultado)
 Crea un bucle que consiste en tres expresiones opcionales, encerradas en paréntesis y separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle. Este bucle es muy utilizado para recorrer listas de objetos. Si nosotros tenemos una lista de 10 variables y queremos hacer algo sobre cada una de las variables podemos hacer un bucle for que hará las 10 iteraciones que necestiamos. Su sintaxis es la siguiente:
 ```javascript
 for (inicio; condición; incremento) {
-  sentencia
+  statement
 }
 ```
 * **_INICIO:_** La declaración de variable, típicamente se utiliza para usarse como variable contador. Esta expresión puede opcionalmente declarar nuevas variables con la palabra clave var. Estas variables no son locales del bucle, es decir, están en el mismo alcance en el que está el bucle for. El resultado de esta expresión es descartado.
@@ -216,7 +216,7 @@ La declaración for...in itera sobre las propiedades enumerables de un objeto, e
 Su sintaxis es:
 ```javascript
 for (variable in objeto) {
-  sentencia
+  statement
 }
 ```
 * **_VARIABLE:_** Un nombre distinto es asignado a la variable en cada iteración.
@@ -247,7 +247,7 @@ La declaración for...of crea un bucle que itera a través de objetos iterables 
 Su sintaxis es:
 ```javascript
 for (variable of objeto) {
-  sentencia
+  statement
 }
 ```
 * **_VARIABLE:_** En cada iteración se asigna un valor de una propiedad distinta a la variable.
