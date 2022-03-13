@@ -23,6 +23,7 @@ En javascript disponemos de 3 tipos de estructuras de control:
 Otro ejemplo muy fácil de comprender relaccionado con la seguridad informática se da cuando en formularios html de control de acceso se piden una y otra vez los credenciales de acceso hasta que el usuario proporciona una pareja usuario/clave válida y accede al sistema. Tu como programador no sabes cúantas veces vas a tener que pedir la clave al usuario, puede que la introduzca bien a la primera, a la segunda, a la tercer o quizá nunca. Para estos casos los bucles son la solución. Con un bucle puedes pedir de forma reiterada los credenciales de acceso hasta que o bien proporciona unos válidos y accede o bien llega a un número máximo de intentos y se le deniega incluso el derecho a seguir probando contraseñas por un tiempo.
 
 * **Estructuras de control de errores**. Estas estructuras son clave en el mundo de la seguridad informática. Son aquellas que permiten controlar los errores que el usuario final comete de forma fortuita o intencionada y poder seguir trabando de forma normal. Los errores más típicos a tener en cuenta se producen cuando pedimos al usuario que introduzca un número pero el usuario nos introduce una letra. Esto producirá un error en nuestro programá y hará que se comporte de forma inadecuada si no hemos controlado mediante una estructura de control de errores este caso.
+
 <h1  align="center"></h1>
 <h1  align="center">ESTRUCTURAS DE CONTROL CONDICIONALES</h1>
 
@@ -254,14 +255,14 @@ for (variable of objeto) {
 
 Veamos algunos ejemplos:
 
->> *CON ARRAY*
+>> *ARRAY*
 ```javascript
 let arr = ['Martina', 'Lucia', 'Thomas']
 for (let i of arr) {
   console.log(i)   // Martina, Lucia, Thomas 
 }
 ```
->> *CON MAP*
+>> *MAP*
 ```javascript
 var m = new Map()
 m.set(1, 'negro')
@@ -270,7 +271,7 @@ for (var n of m) {
   console.log(n)   // [1, 'negro'], [2, 'rojo']
 }
 ```
->> *CON SET*
+>> *SET*
 ```javascript
 var s = new Set()
 s.add(1)
@@ -280,7 +281,7 @@ for (var n of s) {
 }
 ```
 
->> *CON ARGUMENTS OBJECT*
+>> *ARGUMENTS OBJECT*
 ```javascript
 function mostrarObjetoArguments() {
   for (let n of arguments) {
@@ -288,20 +289,7 @@ function mostrarObjetoArguments() {
   }
 }
 mostrarObjetoArguments(1, 'rojo')
-
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 <br/>
 
 <br/>
