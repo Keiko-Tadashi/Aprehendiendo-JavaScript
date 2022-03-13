@@ -18,21 +18,21 @@ switch(opcion){
 		break
 }
 */
-let fruta = 'manzanas';
+let fruta = 'manzanas'
 switch (fruta) {
   case 'naranjas':
-    console.log('Las naranjas cuestan $ 30,00 el Kg.');
-    break;
+    console.log('Las naranjas cuestan $ 30,00 el Kg.')
+    break
   case 'manzanas':
-    console.log('Las manzanas cuestan $ 28,00 el Kg');
-    break;
+    console.log('Las manzanas cuestan $ 28,00 el Kg'
+    break
   case 'bananas':
-    console.log('Los plátanos cuestan $ 80,00 el Kg.');
-    break;
+    console.log('Los plátanos cuestan $ 80,00 el Kg.')
+    break
   case 'cerezas':
-    console.log('Las cerezas cuestan $ 95,00 el Kg.');
-    break;
+    console.log('Las cerezas cuestan $ 95,00 el Kg.')
+    break
   default:
-    console.log(`Lo sentimos, no tenemos ${fruta}.`);
+    console.log(`Lo sentimos, no tenemos ${fruta}.`)
 }
 console.log('¿Hay algo más que quieras?');
