@@ -210,6 +210,7 @@ undefined
 Hay dos maneras de arreglar este código. Que la condición sea `i < arr.length` ó `i <= arr.length - 1`.
 
 >### *BUCLE for...in*
+
 La declaración for...in itera sobre las propiedades enumerables de un objeto, en orden arbitrario. Para cada propiedad distinta, se pueden ejecutar sentencias.
 Su sintaxis es:
 ```javascript
@@ -239,6 +240,42 @@ let i=0
 for (indice[i++] in objeto){}
 console.log(indice)    // ['a', 'b', 'c']
 ```
+>### *BUCLE for...of*
+
+La declaración for...of crea un bucle que itera a través de objetos iterables (incluyendo Array, Map, Set, el objeto Argumentos y así sucesivamente), invocando un hook (función) de iteración con sentencias a ejecutar para el valor de cada propiedad distinta.
+Su sintaxis es:
+```javascript
+for (variable of objeto) {
+  sentencia
+}
+```
+* **_VARIABLE:_** En cada iteración se asigna un valor de una propiedad distinta a la variable.
+* **_OBJETO:_** Objeto cuyas propiedades son iteradas.
+Veamos algunos ejemplos:
+> *CON ARRAY*
+```javascript
+let arr = [ "fred", "tom", "bob" ]
+for (let i of arr) {
+  console.log(i)  // 
+}
+
+```
+```javascript
+for (variable of objeto) {
+  sentencia
+}
+``````javascript
+for (variable of objeto) {
+  sentencia
+}
+```
+
+
+
+
+
+
+
 
 
 <br/>
