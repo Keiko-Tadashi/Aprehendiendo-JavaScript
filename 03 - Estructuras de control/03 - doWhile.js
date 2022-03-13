@@ -5,11 +5,12 @@ while(condicion){
 }
 */
 var resultado = 1
-var numero = 5
+var numero = 10
 do {
-  resultado = resultado * numero
-  numero --
-} while(numero > 0){
- 
-console.log(resultado)
-}
+    resultado = resultado * numero
+    console.log(numero)
+    numero --
+    console.log(numero)
+    } while(numero > 5){
+        console.log(numero)
+    }
