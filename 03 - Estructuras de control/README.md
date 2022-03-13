@@ -150,13 +150,15 @@ do {
 Veamos un ejemplo exactamente igual que el anterior pero con la diferencia de que la condición se comprueba al final. Este tipo de bucles son muy utilizados cuando creamos un menú de opciones; mientras el usuario no elija la opción de salir del programa seguiremos trabajando con el. Por ello necesitamos comprobar la opción que el usuario a elegido al final del programa, ya que al principio aún no sabemos la opción que ha escogido
 ```javascript
 var resultado = 1
-var numero = 5
+var numero = 10
 do {
-  resultado = resultado * numero
-  numero –
-} while(numero > 0)
- 
-console.log(resultado)
+    resultado = resultado * numero
+    console.log(numero)
+    numero --
+    console.log(numero)
+    } while(numero > 5){
+        console.log(numero)
+    }
 ```
 >### *BUCLE for*
 
@@ -187,7 +189,7 @@ for (var elefante = 1; elefante < 10; elefante+=2) {
     if (elefante === 7) {
         break
     }
-    console.info('elefante es ' + elefante)
+    console.log(`elefante es ${elefante}`)
 }
 // Resultado
 elefante es 1
@@ -223,14 +225,12 @@ for (variable in objeto) {
 * **_OBJETO:_** Objeto cuyas propiedades enumerables (no de tipo symbol) son iteradas.
 Veamos un ejemplo:
 ```javascript
-// Inicializar el array (arreglo).
-let array = ['uno','dos', 'tres', 'cuatro']
-// Iterar sobre las propiedades y elementos.
+let array = ['perro','gato', 'canario', 'loro']
 var s = ''
-for (let key in array) {
-    s += key + ':' + array[key] + '    '
+for (let value in array) {
+    s += value + ':' + array[value] + ', '
 }
-console.log(s) // 0:uno 1:dos 2:tres 3:cuatro
+console.log(s)
 ```
 Forma eficiente de obtener los índices (keys) de un objeto usando la expresión dentro de las condiciones del bucle for-in
 
