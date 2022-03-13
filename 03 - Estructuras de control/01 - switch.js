@@ -24,7 +24,7 @@ switch (fruta) {
     console.log('Las naranjas cuestan $ 30,00 el Kg.')
     break
   case 'manzanas':
-    console.log('Las manzanas cuestan $ 28,00 el Kg'
+    console.log('Las manzanas cuestan $ 28,00 el Kg')
     break
   case 'bananas':
     console.log('Los plátanos cuestan $ 80,00 el Kg.')
