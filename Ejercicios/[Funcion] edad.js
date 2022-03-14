@@ -1,5 +1,5 @@
 function tieneEdad(edad){
-    let age = edad > 18 ? '"Aceptado, puedes ingresar"' : '"Disculpa, no puedes ingresar"'
+    let age = edad >= 18 ? '"Aceptado, puedes ingresar"' : '"Disculpa, no puedes ingresar"'
     return age
 }
-console.log(tieneEdad(19))
+console.log(tieneEdad(18))
