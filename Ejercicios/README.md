@@ -7,7 +7,7 @@ const Kapelu = {
    github: 'https://github.com/Kapelu'
 }
 ```
-<h1 align="center">FUNCIONES</h1>
+<h1 align="center">-->    <--- </h1>
 
 
 
