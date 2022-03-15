@@ -9,6 +9,7 @@
 
 <br/>
 <br/>
+
 ```javascript
 const kapelusz = {
     name : 'Daniel Calderon',
