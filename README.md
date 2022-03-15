@@ -1,8 +1,14 @@
-<h1 align="center">
+
 <img src="https://github.com/Kapelu/Kapelu/blob/main/images/png/kape.png?w=1200"/>
-  
-<h4 align="left">
+<h1 align="center">Aprehender!!!</h1>
+
+
  
+
+
+
+<br/>
+<br/>
 ```javascript
 const kapelusz = {
     name : 'Daniel Calderon',
@@ -13,7 +19,5 @@ const kapelusz = {
 }
 ```
 <br/>
-<br/>
-<br/>
 <p align="center">
-<h3 align="left">Gracias!!!!  :rose:   XOXOXO
+<h3 align="center">Gracias!!!!  :rose:   XOXOXO
