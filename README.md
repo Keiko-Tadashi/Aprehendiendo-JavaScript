@@ -1,3 +1,12 @@
+```javascript
+const kapelusz = {
+    name : 'Daniel Calderon',
+    henry: 'FT-24b'
+     code: ['Javascript', 'HTML', 'CSS', 'NodeJS'],
+    tools: ['Visual Studio Code','GitBash', 'GitHub'],
+   github: 'https://github.com/Kapelu'
+}
+```
 <h1 align="center">Aprehender!!!</h1>
 
 Los conocimientos adquiridos a través del `aprender` se pueden olvidar con el tiempo ya que el individuo no lo internaliza como el caso de que a los días no se recuerda la lección estudiada en la universidad, muy diferente con el `aprehender` ya que los conocimientos obtenidos jamás se olvidan, por ejemplo: el colocarse unos zapatos, o que string es una cadena de texto.
@@ -11,25 +20,6 @@ Por el contrario, aprehender inevitablemente se vincula al proceso de aprendizaj
 Para lograr un aprendizaje significativo es necesario que el estudiante `aprenda a aprender`, que elabore e internalice conocimientos pero también habilidades y destrezas que hacen más eficiente su aprendizaje. La actitud frente al aprendizaje debe considerar el tener tolerancia a la frustración. El aprendiz debe aprender a enfrentar el desánimo que genera la dificultad de lo que se aprende; y no obstante tener el firme convencimiento de que se encuentra en el camino correcto y que necesita pasar por esos niveles para llegar a construir el nuevo nivel de conocimiento y ver cumplido así su objetivo.
 
 <img src="https://github.com/Kapelu/Kapelu/blob/main/images/jpg/frasePele.jpg?w=1200"/>
-
-
-
- 
-
-
-
-<br/>
-<br/>
-
-```javascript
-const kapelusz = {
-    name : 'Daniel Calderon',
-    henry: 'FT-24b'
-     code: ['Javascript', 'HTML', 'CSS', 'NodeJS'],
-    tools: ['Visual Studio Code','GitBash', 'GitHub'],
-   github: 'https://github.com/Kapelu'
-}
-```
-<br/>
-<p align="center">
 <h3 align="center">Gracias!!!!  :rose:   XOXOXO
+<p align="center">
+
