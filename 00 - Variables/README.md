@@ -7,7 +7,7 @@ const Kapelu = {
    github: 'https://github.com/Kapelu'
 }
 ```
-<h1 align="center">VARIABLES
+<h1 align="center">VARIABLES</h1>
 
 Las variables son la manera como los programadores le dan nombre a un valor para poder reusarlo, actualizarlo o simplemente registrarlo. Las variables se pueden usar para guardar cualquier tipo de dato en JavaScript.
 
