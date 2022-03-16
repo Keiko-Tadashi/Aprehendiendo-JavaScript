@@ -22,7 +22,7 @@ Para lograr un aprendizaje significativo es necesario que el estudiante `aprenda
 <br/> 
 <br/> 
 <br/> 
-![Visitas](https://img.shields.io/github/watchers/kapelu/Aprehendiendo-JavaScript?style=plastic)
+![GitHub watchers](https://img.shields.io/github/watchers/kapelu/Aprehendiendo-JavaScript?color=green&label=Visitas&logoColor=green&style=plastic)
 <h3 align="center">Gracias!!!!  :rose:   XOXOXO
 <p align="center">
 
