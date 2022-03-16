@@ -18,8 +18,11 @@ El auténtico aprendizaje es el aprendizaje significativo, el aprendizaje con se
 Por el contrario, aprehender inevitablemente se vincula al proceso de aprendizaje de cualquier actividad o materia en la vida. El aprendizaje significativo asegura al aprendiz enlazar cuanto sabe e intenta saber, de modo que el conocimiento forma parte de un todo, no se encuentra aislado, no se agarra con pinzas, tiene fuerza, forma parte de la experiencia e incluso llega a formar parte de la personalidad.
 
 Para lograr un aprendizaje significativo es necesario que el estudiante `aprenda a aprender`, que elabore e internalice conocimientos pero también habilidades y destrezas que hacen más eficiente su aprendizaje. La actitud frente al aprendizaje debe considerar el tener tolerancia a la frustración. El aprendiz debe aprender a enfrentar el desánimo que genera la dificultad de lo que se aprende; y no obstante tener el firme convencimiento de que se encuentra en el camino correcto y que necesita pasar por esos niveles para llegar a construir el nuevo nivel de conocimiento y ver cumplido así su objetivo.
-
 <img src="https://github.com/Kapelu/Kapelu/blob/main/images/jpg/frasePele.jpg?w=1200"/>
+<br/> 
+<br/> 
+<br/> 
+![Visitas](https://img.shields.io/github/watchers/kapelu/Aprehendiendo-JavaScript?style=plastic)
 <h3 align="center">Gracias!!!!  :rose:   XOXOXO
 <p align="center">
 
