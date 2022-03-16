@@ -61,7 +61,9 @@ tablaDeMultiplicar(2)
 ```
 Como vemos en este ejemplo le estamos dando el parametro de 2, lo que significa que realizaria la tabla del 2, en cuyo caso quisieramos hacer la tabla del 5, 7, 9 u 8, solo tendriamos que cambiar el parametro de 2 por el valor que deseemos.
 
-Ahora veremos que tambien podemos agregar mas de un parametro a las funciones y hacer cosas mucho mas interesante, usando el ejemplo anterior vamos a crear tablas de multiplicar hasta el 15 en este caso, pero el mismo codigo podemos crear las tablas hasta el 100 si deseamos, pero nosotros solo llegaremos hasta 15.
+**Parametro Argumento**
+
+Ahora veremos que tambien podemos agregar mas de un parametro como argumento a las funciones y hacer cosas mucho mas interesante, usando el ejemplo anterior vamos a crear tablas de multiplicar hasta el 15 en este caso, pero el mismo codigo podemos crear las tablas hasta el 100 si deseamos, pero nosotros solo llegaremos hasta 15.
 ```javascript
 function tablaDeMultiplicar(num, hasta){
     for (let i = 0; i <=hasta; i++){
@@ -69,7 +71,8 @@ function tablaDeMultiplicar(num, hasta){
         console.table(`${num} x ${i} = ${resultado}`)
     }
 }
-tablaDeMultiplicar(2,15)
+tablaDeMultiplicar(2,15)    // el 2, es la tabla la cual vamos a crear y el 15 hasta donde va a llegar nuestra tabla.
+
 /* Esto nos mostrara por consola
 2 x 0 = 0
 2 x 1 = 2
@@ -89,6 +92,11 @@ tablaDeMultiplicar(2,15)
 2 x 15 = 30
 */
 ```
+<h1 align="center">Creación de funciones</h1>
+
+Hasta ahora vimos como se declaran y como se ejecutan las funciones. Ahora veremos como crearlas.
+
+* ***Por DECLARACION:*** La más usada por principiantes
 
 
 
@@ -101,58 +109,6 @@ tablaDeMultiplicar(2,15)
 
 
 
-
-
-
-Expresión de Función
-
-_Aquí se crea una función anónima y se le asigna a una variable. Esta función no se encuentra lista hasta que esa línea en particular sea evaluada durante la ejecución del código._
-_Ejemplo:_
-
-    var Cantar = function(){
-        alert("Yo canto muy bien");
-    }
-
-## Funciones con parámetros
-
-_Hasta ahora sólo hemos visto como se crean las funciones sin parámetros. A continuación los parámetros pueden ser capturados dentro de la función y hacer cualquier tipo de manipulación sobre estas, ya que una función puede tener muchos parámetros separados por comas._
-_Ejemplo:_
-
-    function Saludar(nombre, edad){
-        this.nombre = nombre;
-        this.edad = edad;
-        console.log("Hola mi nombre es: "+ this.nombre + " y tengo: " + this.edad + " años." );
-    }
-    Saludar(“Juniors”, 24);
-
-## Funciones con la instrucción return
-
-_Una función JavaScript puede tener la instrucción return. Esta es requerida si queremos que la función dada nos retorne un valor. La instrucción return debe ser la última línea en una función._
-_Ejemplo:_
-
-    function Valores(a,b,c){
-        return a+b+c;
-    }
-    var suma = Valores(3,4,5);      // esta función nos retorna el valor de 12
-
-
-
-
-```javascript
-while(condicion){
-    statement
-}
-```
-```javascript
-while(condicion){
-    statement
-}
-```
-```javascript
-while(condicion){
-    statement
-}
-```
 
 <br/>
 <br/>

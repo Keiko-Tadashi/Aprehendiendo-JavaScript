@@ -1,0 +1,51 @@
+
+
+Expresión de Función
+
+_Aquí se crea una función anónima y se le asigna a una variable. Esta función no se encuentra lista hasta que esa línea en particular sea evaluada durante la ejecución del código._
+_Ejemplo:_
+
+    var Cantar = function(){
+        alert("Yo canto muy bien");
+    }
+
+## Funciones con parámetros
+
+_Hasta ahora sólo hemos visto como se crean las funciones sin parámetros. A continuación los parámetros pueden ser capturados dentro de la función y hacer cualquier tipo de manipulación sobre estas, ya que una función puede tener muchos parámetros separados por comas._
+_Ejemplo:_
+
+    function Saludar(nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+        console.log("Hola mi nombre es: "+ this.nombre + " y tengo: " + this.edad + " años." );
+    }
+    Saludar(“Juniors”, 24);
+
+## Funciones con la instrucción return
+
+_Una función JavaScript puede tener la instrucción return. Esta es requerida si queremos que la función dada nos retorne un valor. La instrucción return debe ser la última línea en una función._
+_Ejemplo:_
+
+    function Valores(a,b,c){
+        return a+b+c;
+    }
+    var suma = Valores(3,4,5);      // esta función nos retorna el valor de 12
+
+
+
+
+```javascript
+while(condicion){
+    statement
+}
+```
+```javascript
+while(condicion){
+    statement
+}
+```
+```javascript
+while(condicion){
+    statement
+}
+```
