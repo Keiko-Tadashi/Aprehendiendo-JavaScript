@@ -2,7 +2,8 @@
 
 Desde lo básico a lo avanzado: comprueba si realmente conoces _Javascript_, actualiza tus conocimientos o simplemente prepárate para tu próxima entrevista 💪 🚀 Actualizaré este repo semanalmente con nuevas preguntas.
  
- Las respuestas se encuentran en las secciones contraídas debajo de las preguntas, simplemente haz clic en ellas para expandirlas. Buena suerte ❤️
+Las respuestas se encuentran en las secciones contraídas debajo de las preguntas, simplemente haz clic en ellas para expandirlas. Buena suerte ❤️
+ 
 ---
 
 ###### 1. ¿Qué devuelve la siguiente función?
