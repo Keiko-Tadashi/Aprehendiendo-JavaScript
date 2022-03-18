@@ -96,7 +96,7 @@ tablaDeMultiplicar(2,15)    // el 2, es la tabla la cual vamos a crear y el 15 h
 
 Hasta ahora vimos como se declaran y como se ejecutan las funciones. Ahora veremos como crearlas.
 
->***Por DECLARACION:*** La más usada por principiantes
+>***Por DECLARACION:*** La forma más popular de todas, esta forma permite declarar una función que existirá a lo largo de todo el código:
 
 
 
