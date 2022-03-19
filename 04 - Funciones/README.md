@@ -96,9 +96,29 @@ tablaDeMultiplicar(2,15)    // el 2, es la tabla la cual vamos a crear y el 15 h
 
 Hasta ahora vimos como se declaran y como se ejecutan las funciones. Ahora veremos como crearlas.
 
->***Por DECLARACION:*** La forma más popular de todas, esta forma permite declarar una función que existirá a lo largo de todo el código:
+>***Por DECLARACION:*** La forma más popular de todas, esta forma permite declarar una función que existirá a lo largo de todo el código. De hecho, podríamos ejecutar la función saludar() incluso antes de haberla creado y funcionaría correctamente, ya que Javascript primero busca las declaraciones de funciones y luego procesa el resto del código.
 
 Tiene una sintaxis muy sencilla
+```javascript
+function nombreDeLaFuncion() {
+  // Statment
+}
+nombreDeLaFuncion()
+```
+Veamos como funcionaria:
+
+```javascript
+function saludar() {
+  return "Hola"
+}
+saludar() // 'Hola'
+typeof saludar // 'function'. El operador 'typeof' nos estaria indicando que saludar es una función.
+```
+>***Por EXPRESIÓN:*** Es otra forma de crear una variable, que consiste en crear una funcion dentro de una variable para ejecutarlas posteriormente, fundamentalmente hacen lo mismo con algunas diferencias. 
+
+Estas pueden ser de anonimas (sin nombre) o se le puede proporcionar un nombre, esto permite que la función se refiera a sí misma y también facilita la identificación de la función en el seguimiento de la pila de un depurador. 
+
+Veamos sus sintaxis:
 
 
 

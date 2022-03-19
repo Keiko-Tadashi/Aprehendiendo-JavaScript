@@ -1,5 +1,6 @@
-function esPositivo(number) {
-  if (number === 0) {return false}
-  return ((number >> 31) & 1) === 0
+function esPositivo(numero) {
+  let num = numero >= 0 ? (`${numero} Es Positivo`) : (`${numero} Es Negativo`)
+  return num
 }
+console.log(esPositivo(-14))
 console.log(esPositivo(14))
