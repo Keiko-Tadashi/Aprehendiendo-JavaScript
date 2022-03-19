@@ -98,6 +98,8 @@ Hasta ahora vimos como se declaran y como se ejecutan las funciones. Ahora verem
 
 >***Por DECLARACION:*** La forma más popular de todas, esta forma permite declarar una función que existirá a lo largo de todo el código:
 
+Tiene una sintaxis muy sencilla
+
 
 
 
