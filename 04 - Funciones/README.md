@@ -116,9 +116,56 @@ typeof saludar // 'function'. El operador 'typeof' nos estaria indicando que sal
 ```
 >***Por EXPRESIÓN:*** Es otra forma de crear una variable, que consiste en crear una funcion dentro de una variable para ejecutarlas posteriormente, fundamentalmente hacen lo mismo con algunas diferencias. 
 
-Estas pueden ser de anonimas (sin nombre) o se le puede proporcionar un nombre, esto permite que la función se refiera a sí misma y también facilita la identificación de la función en el seguimiento de la pila de un depurador. 
+Estas pueden ser de anonimas (sin nombre) o se le puede proporcionar un nombre. Al proporcionarle un nombre permite que la función se refiera a sí misma y también facilita la identificación de la función en el seguimiento de la pila de un depurador. 
 
-Veamos sus sintaxis:
+Veamos algunos ejemplos
+```javascript
+// función anonima (sin nombre)
+const suma = function(a,b) {return a + b}
+console.log(suma(15,10))
+```
+```javascript
+// función con nombre
+const suma = function sumar(a,b) {return a + b}
+console.log(suma(15,10))   // 25
+console.log(sumar(15,10))  //sumar is not defined
+```
+Con este nuevo enfoque, estamos creando una función en el interior de una variable, lo que nos permitirá posteriormente ejecutar la variable (como si fuera una función). Observa que el nombre de la función (en este ejemplo: sumar) pasa a ser inútil, ya que si intentamos ejecutar sumar() nos dirá que no esta definida y si ejecutamos suma() funciona correctamente.
+
+Las expresiones function son convenientes cuando se pasa una función como argumento a otra función. El siguiente ejemplo muestra una función map que debería recibir una función como primer argumento y un arreglo como segundo argumento.
+```javascript
+function map(f, a) {
+    let result = [] // Crea un nuevo arreglo
+    let i // Declara una variable
+    for (i = 0; i != a.length; i++) // se recorre i tantas posiciones como tenga a
+      result[i] = f(a[i]) // el resultado se almacena en result que va a ser igual a la funcion f de con valores de i
+    return result
+}
+const f = function(x) {return x * x * x}  // es el valor del primer argumento
+let numbers = [0, 1, 2, 5, 10]    // es el valor del segundo argumento
+let cube = map(f,numbers)  // map queda almacenada dentro de la variable cube "exprecion de funcion"
+console.log(cube)   // [10,11,12,15,20]
+```
+
+
+
+
+
+
+
+
+
+
+```javascript
+while(condicion){
+    statement
+}
+```
+```javascript
+while(condicion){
+    statement
+}
+```
 
 
 
