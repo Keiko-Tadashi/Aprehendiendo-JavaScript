@@ -146,7 +146,7 @@ let numbers = [0, 1, 2, 5, 10]    // es el valor del segundo argumento
 let cube = map(f,numbers)  // map queda almacenada dentro de la variable cube "exprecion de funcion"
 console.log(cube)   // [10,11,12,15,20]
 ```
-
+>***Por EXPRESIÓN:***
 
 
 
