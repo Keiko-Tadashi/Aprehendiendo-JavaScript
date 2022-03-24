@@ -4,7 +4,7 @@ function Persona (nombre, apellido, edad, direcion){
         this.apellido = apellido;
         this.edad = edad;
         this.direcion = direcion;
-        this.saludo = function (){return 'hola!'+this.nombre}
+        this.saludo = function (){return 'hola soy '+this.nombre}
         this.datos = { //objeto dentro de un objeto
             nombresCompleto : this.nombre + ' ' + this.apellido,
             edad: this.edad + ' años de edad',
@@ -28,7 +28,7 @@ class Persona {
             direcion: this.direcion
         }
     }
-    saludo(){return 'hola!'+this.nombre}
+    saludo(){return 'hola'+this.nombre}
 }*/
 // crea los objetos
 const daniel= new Persona('daniel','calderon',42,'uspallata 456')
