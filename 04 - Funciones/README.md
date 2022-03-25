@@ -116,7 +116,7 @@ typeof saludar // 'function'. El operador 'typeof' nos estaria indicando que sal
 ```
 >***Por EXPRESIÓN:*** Es otra forma de crear una variable, que consiste en crear una funcion dentro de una variable para ejecutarlas posteriormente, fundamentalmente hacen lo mismo con algunas diferencias. 
 
-Estas pueden ser de anonimas (sin nombre) o se le puede proporcionar un nombre. Al proporcionarle un nombre permite que la función se refiera a sí misma y también facilita la identificación de la función en el seguimiento de la pila de un depurador. 
+Estas pueden ser de anonimas (sin nombre), mas adelante hablaremos mas de ellas, o se le puede proporcionar un nombre. Al proporcionarle un nombre permite que la función se refiera a sí misma y también facilita la identificación de la función en el seguimiento de la pila de un depurador. 
 
 Veamos algunos ejemplos
 ```javascript
@@ -146,7 +146,68 @@ let numbers = [0, 1, 2, 5, 10]    // es el valor del segundo argumento
 let cube = map(f,numbers)  // map queda almacenada dentro de la variable cube "exprecion de funcion"
 console.log(cube)   // [10,11,12,15,20]
 ```
->***Por EXPRESIÓN:***
+>***Por COMO OBJETOS:*** También se pueden declarar funciones como objetos. Sin embargo, es un enfoque que no se suele utilizar. Simplemente es interesante saberlo para darse cuenta que en Javascript todo pueden ser objetos. por ejemplo:
+```javascript
+const saludar = new Function("return 'Hola';")
+saludar() // 'Hola'
+```
+
+>***FUNCIONES ANONIMAS:*** Las funciones anónimas son un tipo de funciones que se declaran sin nombre de función y se alojan en el interior de una variable y haciendo referencia a ella cada vez que queramos utilizarla
+```javascript
+// Función anónima "saludo"
+const saludo = function () {
+  return "Hola"
+}
+saludo // ƒ () { return 'Hola'; }
+saludo() // 'Hola'
+```
+Notemos que en la última línea del ejemplo anterior, estamos ejecutando la variable, es decir, ejecutando la función que contiene la variable. Sin embargo, en la línea anterior hacemos referencia a la variable (sin ejecutarla, no hay paréntesis) y nos devuelve la función en sí.
+
+La diferencia fundamental entre las funciones por declaración y las funciones por expresión es que estas últimas sólo están disponibles a partir de la inicialización de la variable. Si «ejecutamos la variable» antes de declararla, nos dará un error.
+
+>***FUNCIONES ANONIMAS:*** Pueden existir casos en los que necesites crear una función y ejecutarla sobre la marcha. En Javascript es muy sencillo crear funciones autoejecutables. Básicamente, sólo tenemos que envolver entre paréntesis la función anónima en cuestión (no necesitamos que tenga nombre, puesto que no la vamos a guardar) y luego, ejecutarla.
+
+```javascript
+// Función anónima "saludo"
+const saludo = function () {
+  return "Hola"
+};
+
+saludo  // ƒ () { return 'Hola'; }
+saludo()  // 'Hola'
+```
+Observa que en la última línea del ejemplo anterior, estamos ejecutando la variable, es decir, ejecutando la función que contiene la variable. Sin embargo, en la línea anterior hacemos referencia a la variable (sin ejecutarla, no hay paréntesis) y nos devuelve la función en sí.
+
+La diferencia fundamental entre las funciones por declaración y las funciones por expresión es que estas últimas sólo están disponibles a partir de la inicialización de la variable. Si «ejecutamos la variable» antes de declararla, nos dará un error.
+
+>***FUNCIONES AUTOEJECUTABLE:*** Para analizar el funcionamiento de la función paso a paso, tenemos que comenzar por su estructura más básica 
+```javascript 
+( ... )()
+```
+Los paréntesis exteriores, como en una operación matématica, ‘encierran’ el contenido. El segundo juego de paréntesis asume que el interior de los anteriores es una función y la ejecuta inmediatamente. En el caso anterior, para invocar myFunction nada más declararla, pordríamos utilizar:
+```javascript
+(myFunction)()
+```
+Sin embargo, para flexibilizar la estructura, en lugar de hacer referencia a una función existente, construímos una anónima:
+```javascript
+(function(){})();
+```
+Con el código anterior, conseguimos crear una función, ejecutarla y luego desecharla: realmente lo interesante es que enlazamos el objeto devuelto al contexto global, no la función en sí misma. Con esto, sus propiedades y métodos tienen acceso al resto de variables globales dándole una gran flexibilidad y alcance al esquema.
+
+```javascript
+// Función autoejecutable
+(function () {
+  console.log("Hola!!")
+})()
+
+// Función autoejecutable con parámetros
+(function (name) {
+  console.log(`¡Hola, ${name}!`)
+})("Daniel")
+```
+
+
+
 
 
 
@@ -166,9 +227,6 @@ while(condicion){
     statement
 }
 ```
-
-
-
 
 
 
