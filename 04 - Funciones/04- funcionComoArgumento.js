@@ -9,5 +9,4 @@ function map(f, a) {
     return result
 }
 
-
 console.log(map(f,numbers))
