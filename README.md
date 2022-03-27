@@ -26,5 +26,5 @@ Para lograr un aprendizaje significativo es necesario que el estudiante `aprenda
 <p align="center">
 
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Kapelu&repo=Aprehendiendo-JavaScript-readme-stats)](https://github.com/Kapelu/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Kapelu&repo=Aprehendiendo-JavaScript-readme-stats)](https://github.com/Kapelu/Aprehendiendo-JavaScript-readme-stats)
 
