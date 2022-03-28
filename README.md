@@ -1,4 +1,3 @@
-api/pin?username=Kapelu&repo=Aprehendiendo-JavaScript
 ```javascript
 const kapelusz = {
     name : 'Daniel Calderon',
