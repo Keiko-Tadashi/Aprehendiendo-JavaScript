@@ -1,4 +1,4 @@
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Kapelu&repo=kapelu-readme-stats)](https://github.com/Kapelu/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Kapelu&repo=Aprehendiendo-JavaScript)](https://github.com/Kapelu/Aprehendiendo-JavaScript)
 
 ```javascript
 const kapelusz = {
