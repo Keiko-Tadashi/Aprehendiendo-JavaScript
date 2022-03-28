@@ -1,3 +1,5 @@
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Kapelu&repo=github-readme-stats)](https://github.com/Kapelu/github-readme-stats)
+
 ```javascript
 const kapelusz = {
     name : 'Daniel Calderon',
@@ -24,4 +26,4 @@ Para lograr un aprendizaje significativo es necesario que el estudiante `aprenda
 <br/> 
 <h3 align="center">Gracias!!!!  :rose:   XOXOXO
 <p align="center">
-api/pin?username=anuraghazra&repo=github-readme-stats
+api/pin?username=Kapelu=github-readme-stats
